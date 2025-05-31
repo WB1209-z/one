@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日祝福</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 登录页面 -->
+    <div id="loginPage" class="page active">
+        <div class="login-background">
+            <div class="floating-particles"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="login-container">
+            <h1>生日快乐</h1>
+            <div class="login-form">
+                <input type="text" id="username" placeholder="账户" class="login-input">
+                <input type="password" id="password" placeholder="密码" class="login-input">
+                <button id="loginBtn" class="login-button">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 过渡动画页面 -->
+    <div id="transitionPage" class="page">
+        <div class="transition-content">
+            <div class="surprise-animation">
+                <div class="heart-explosion"></div>
+                <div class="sparkles"></div>
+                <h2 class="surprise-text">为你准备的惊喜...</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主页面容器 -->
+    <div id="mainPages" class="page">
+        <div class="pages-container">
+            <!-- 第一页 -->
+            <div class="main-page" data-page="1">
+                <div class="page-background bg-1"></div>
+                <div class="video-container circle-video">
+                    <video autoplay muted loop>
+                        <source src="video/main-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2 class="page-title">今日主角</h2>
+                <div class="scroll-hint">
+                    <div class="scroll-arrow">↑</div>
+                    <p>向上滑动</p>
+                </div>
+            </div>
+
+            <!-- 第二页到第九页 -->
+            <div class="main-page" data-page="2">
+                <div class="page-background bg-2"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo1.jpg" alt="照片1" class="clickable-image" data-audio="audio/audio1.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 重复第二页到第九页的结构 -->
+            <div class="main-page" data-page="3">
+                <div class="page-background bg-3"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo2.jpg" alt="照片2" class="clickable-image" data-audio="audio/audio2.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page" data-page="4">
+                <div class="page-background bg-4"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo3.jpg" alt="照片3" class="clickable-image" data-audio="audio/audio3.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page" data-page="5">
+                <div class="page-background bg-5"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo4.jpg" alt="照片4" class="clickable-image" data-audio="audio/audio4.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page" data-page="6">
+                <div class="page-background bg-6"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo5.jpg" alt="照片5" class="clickable-image" data-audio="audio/audio5.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page" data-page="7">
+                <div class="page-background bg-7"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo6.jpg" alt="照片6" class="clickable-image" data-audio="audio/audio6.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page" data-page="8">
+                <div class="page-background bg-8"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo7.jpg" alt="照片7" class="clickable-image" data-audio="audio/audio7.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video7.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page" data-page="9">
+                <div class="page-background bg-9"></div>
+                <div class="content-layout">
+                    <div class="top-left">
+                        <img src="images/photo8.jpg" alt="照片8" class="clickable-image" data-audio="audio/audio8.mp3">
+                        <div class="image-text"><!-- 预留文字区域 --></div>
+                    </div>
+                    <div class="bottom-right">
+                        <video controls>
+                            <source src="video/video8.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="center-text">
+                        <!-- 预留中央文字区域 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第十页 -->
+            <div class="main-page" data-page="10">
+                <div class="page-background wine-red"></div>
+                <div class="text-content">
+                    <!-- 预留文字区域 -->
+                </div>
+            </div>
+
+            <!-- 第十一页 -->
+            <div class="main-page" data-page="11">
+                <div class="page-background black-bg"></div>
+                <div class="final-text">
+                    <div class="big-text top">上</div>
+                    <div class="big-text bottom">下</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 音乐控制按钮 -->
+        <button id="musicToggle" class="music-toggle">
+            <span class="music-icon">♪</span>
+        </button>
+    </div>
+
+    <!-- 背景音乐 -->
+    <audio id="backgroundMusic" loop>
+        <source src="audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
