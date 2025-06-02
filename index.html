@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日祝福</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 登录页面 -->
+    <div id="loginPage" class="page active">
+        <div class="background-animation">
+            <div class="floating-lights"></div>
+            <div class="stars"></div>
+        </div>
+        <div class="login-container">
+            <h1>生日快乐</h1>
+            <div class="login-form">
+                <input type="text" id="username" placeholder="账户名" class="input-field">
+                <input type="password" id="password" placeholder="密码" class="input-field">
+                <button id="loginBtn" class="login-btn">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 过渡动画页面 -->
+    <div id="transitionPage" class="page">
+        <div class="transition-animation">
+            <div class="surprise-text">准备好了吗？</div>
+            <div class="hearts"></div>
+            <div class="sparkles"></div>
+        </div>
+    </div>
+
+    <!-- 主页面容器 -->
+    <div id="mainContainer" class="page">
+        <!-- 音乐控制按钮 -->
+        <button id="musicBtn" class="music-btn">
+            <span class="music-icon">♪</span>
+        </button>
+
+        <!-- 第一页 -->
+        <div class="main-page page-1 active-main">
+            <div class="background-animation">
+                <div class="floating-particles"></div>
+            </div>
+            <div class="video-container">
+                <video id="mainVideo" autoplay muted loop>
+                    <source src="video/main-video.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放
+                </video>
+            </div>
+            <h2 class="main-title">今日主角</h2>
+            <div class="scroll-hint">
+                <div class="arrow-up">↑</div>
+                <span>向上滑动</span>
+            </div>
+        </div>
+
+        <!-- 第二页到第九页 -->
+        <div class="main-page page-2">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo1.jpg" alt="照片1" class="photo" data-audio="audio/audio1.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- 重复第二页结构创建第三到九页 -->
+        <div class="main-page page-3">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo2.jpg" alt="照片2" class="photo" data-audio="audio/audio2.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page page-4">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo3.jpg" alt="照片3" class="photo" data-audio="audio/audio3.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page page-5">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo4.jpg" alt="照片4" class="photo" data-audio="audio/audio4.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page page-6">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo5.jpg" alt="照片5" class="photo" data-audio="audio/audio5.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page page-7">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo6.jpg" alt="照片6" class="photo" data-audio="audio/audio6.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video6.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page page-8">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo7.jpg" alt="照片7" class="photo" data-audio="audio/audio7.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video7.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page page-9">
+            <div class="background-animation pink-bg">
+                <div class="floating-bubbles"></div>
+            </div>
+            <div class="content-layout">
+                <div class="top-left">
+                    <img src="images/photo8.jpg" alt="照片8" class="photo" data-audio="audio/audio8.mp3">
+                    <p class="left-text">在这里填写文字内容</p>
+                </div>
+                <div class="center-text">
+                    <p>在这里填写中央文字内容</p>
+                </div>
+                <div class="bottom-right">
+                    <video class="side-video" autoplay muted loop>
+                        <source src="video/video8.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第十页 -->
+        <div class="main-page page-10">
+            <div class="wine-red-bg">
+                <div class="elegant-particles"></div>
+            </div>
+            <div class="text-content">
+                <p>在这里填写第十页的文字内容</p>
+            </div>
+        </div>
+
+        <!-- 第十一页 -->
+        <div class="main-page page-11">
+            <div class="black-bg"></div>
+            <div class="final-text">
+                <div class="big-char">下</div>
+                <div class="big-char">楼</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 音频元素 -->
+    <audio id="backgroundMusic" loop>
+        <source src="audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
